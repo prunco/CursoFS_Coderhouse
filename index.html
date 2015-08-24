@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="practicaApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica de Angular</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers.js"></script>
+</head>
+<body ng-controller="NavegarCtrl">
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="navbar navbar-default navbar-static-top">
+				<ul class="nav navbar-nav">
+					<li role="presentation"><a ng-click="cambiarseccion('seccion1')">Seccion1</a></li>
+					<li role="presentation"><a ng-click="cambiarseccion('seccion2')">Seccion2</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container-fluid">
+			<div class="row" ui-view>
+		</div>	
+		</div>
+	</div>
+</body>
+</html>
